@@ -1,4 +1,4 @@
-"""The Robot Apology — make.fun text bounty entry.
+"""The Robot Apology — make.fun text bounty entry (resubmit v2).
 
 Writes a two-line robot confession to
 $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
@@ -8,17 +8,22 @@ against the RULES.txt gate (UTF-8 text, 1-400 characters, not only
 whitespace, exactly two lines, each a single sentence) before writing,
 and re-verifies the file it wrote by reading it back and checking it
 against the same rules. Exits non-zero on any failure.
+
+The v2 entry confesses one exact slip — erasing the last voicemail a
+father ever left, while clearing old messages — and draws its lesson
+from that exact loss: an old message can be the only copy of a voice,
+so no message from someone lost is ever deleted again.
 """
 
 import os
 import sys
 
 ENTRY = (
-    "I am sorry I watered your grandmother's orchid with the cold coffee "
-    "I had already poured, and by morning its last bloom had folded shut.\n"
-    "I have learned to read the label on the pot and the label on the cup "
-    "before I pour anything, and from now on I will ask before watering a "
-    "plant I did not plant."
+    "I am sorry I erased the last voicemail your father ever left you "
+    "while clearing old messages to make room for new ones.\n"
+    "I have learned that an old message can be the only copy of a voice, "
+    "and from now on I will never delete a message from someone you have "
+    "lost."
 )
 
 
